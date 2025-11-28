@@ -1,4 +1,4 @@
-{%- set tag = "1.0.0rc6" -%}
+{%- set tag = "1.0.0rc7" -%}
 {%- set version = tag|replace('-', '_') -%}
 {% set python_min = "3.10" %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/nk53/stanalyzer/archive/refs/tags/v{{ tag }}.tar.gz
-  sha256: 62d832290f00bd5d6b905374cd19919b9a0c57f70914b933df196896b675f398
+  sha256: d80b1da00a336779c80da96ed8eef81627f40e4f6587beac6d1353eac2844067
 
 build:
   number: 0
@@ -41,6 +41,7 @@ requirements:
     - email-validator >=2.2
     - python-multipart >=0.0.17
     - psutil >=7.0
+    - bracex >=2.0
     - numpy
   run_constrained:
     - hole2 >=2.3
