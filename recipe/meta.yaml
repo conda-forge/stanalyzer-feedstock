@@ -1,4 +1,4 @@
-{%- set tag = "1.0.0rc7" -%}
+{%- set tag = "1.0.0rc8" -%}
 {%- set version = tag|replace('-', '_') -%}
 {% set python_min = "3.10" %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/nk53/stanalyzer/archive/refs/tags/v{{ tag }}.tar.gz
-  sha256: d80b1da00a336779c80da96ed8eef81627f40e4f6587beac6d1353eac2844067
+  sha256: dd7d3467172bb4ea4908e75fc095f1708593c4c9c3000310fcfb2a1f634a8ddc
 
 build:
   number: 0
